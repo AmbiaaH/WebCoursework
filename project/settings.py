@@ -136,3 +136,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 INTERNAL_IPS = ['127.0.0.1']
 
 LOGIN_URL = '/login/'  # redirect unauthorized users to this page
+
+AUTH_USER_MODEL = 'api.CustomUser'
