@@ -23,7 +23,7 @@ class User(AbstractUser):
     friends = models.ManyToManyField('self', symmetrical=True, blank=True)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}".strip()
+        return self.username
 
 class Status(models.Model):
     name = models.CharField(max_length=25)
